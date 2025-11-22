@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Maintenance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script async src="https://docs.opencv.org/4.8.0/opencv.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <h1 class="title">📡 Dashboard Maintenance Prédictive – Panneaux Solaires</h1>
+
+    <div class="grid">
+
+        <!-- 1 : État Général -->
+        <div class="panel green" id="etat-general">
+            <h2>État Général</h2>
+            <p id="etat-text">Normal</p>
+        </div>
+
+        <!-- 2 : Performance Ratio -->
+        <div class="panel" id="pr-panel">
+            <h2>Performance Ratio</h2>
+            <canvas id="prChart"></canvas>
+        </div>
+
+        <!-- 3 : Température du Panneau -->
+        <div class="panel" id="temp-panel">
+            <h2>Température</h2>
+            <canvas id="tempChart"></canvas>
+        </div>
+
+        <!-- 4 : Production Instantanée -->
+        <div class="panel" id="prod-panel">
+            <h2>Production (W)</h2>
+            <canvas id="prodChart"></canvas>
+        </div>
+
+        <!-- 5 : Irradiance -->
+        <div class="panel" id="irr-panel">
+            <h2>Irradiance</h2>
+            <canvas id="irrChart"></canvas>
+        </div>
+
+        <!-- 6 : Analyse visuelle -->
+        <div class="panel" id="analyse-panel">
+            <h2>Analyse visuelle</h2>
+            <p id="analyse-result">En attente...</p>
+        </div>
+
+        <!-- 7 : Prédiction -->
+        <div class="panel" id="pred-panel">
+            <h2>Perte dans 48h</h2>
+            <p id="prediction-value">--%</p>
+        </div>
+
+        <!-- 8 : Historique -->
+        <div class="panel" id="historic-panel">
+            <h2>Historique</h2>
+            <canvas id="historicChart"></canvas>
+        </div>
+
+        <!-- 9 : Photo Live -->
+        <div class="panel" id="photo-panel">
+            <h2>Photo Live</h2>
+            <video id="camera" autoplay style="width: 100%; border-radius: 10px;"></video>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

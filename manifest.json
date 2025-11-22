@@ -1,0 +1,14 @@
+{
+    "name": "Solar Maintenance Dashboard",
+    "short_name": "SolarDashboard",
+    "description": "Dashboard énergétique pour la maintenance prédictive des panneaux solaires",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#1b263b",
+    "theme_color": "#3ddc97",
+    "orientation": "portrait",
+    "icons": [
+        { "src": "C:/Users/USER/Desktop/CAS CHALLENGE/icones/download.jpg", "sizes": "192x192", "type": "image/png" },
+        { "src": "C:/Users/USER/Desktop/CAS CHALLENGE/icones/download.jpg", "sizes": "512x512", "type": "image/png" }
+    ]
+}

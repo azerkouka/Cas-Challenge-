@@ -1,0 +1,116 @@
+/* ====== GLOBAL ENERGY THEME ====== */
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #1e3d59);
+    color: #eaf2f8;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #76e7c7;
+    text-shadow: 0 0 12px rgba(118, 231, 199, 0.5);
+}
+
+
+/* ====== GRID LAYOUT ====== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* ====== PANELS ====== */
+
+.panel {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 6px solid #3ddc97;
+    /* Accent vert énergétique */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(7px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+
+/* Hover professionel */
+
+.panel:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    border-color: #61f7d0;
+    /* Accent clair */
+}
+
+
+/* Titres panneaux */
+
+.panel h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #9be7ff;
+    /* Bleu solaire */
+    text-shadow: 0 0 6px rgba(155, 231, 255, 0.5);
+}
+
+
+/* Texte */
+
+.panel p {
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #d9f8ff;
+}
+
+
+/* ====== STATUS PANELS (états) ====== */
+
+.green {
+    border-left-color: #3ddc97;
+    background: linear-gradient(135deg, #2ecc71bb, #27ae60cc);
+}
+
+.orange {
+    border-left-color: #f7b267;
+    background: linear-gradient(135deg, #f39c12cc, #e67e22cc);
+}
+
+.red {
+    border-left-color: #ff6b6b;
+    background: linear-gradient(135deg, #e63946cc, #a4161acc);
+}
+
+
+/* ====== CAMERA VIEW ====== */
+
+#camera {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #76e7c7;
+    box-shadow: 0 0 15px rgba(118, 231, 199, 0.3);
+}
+
+
+/* ====== RESPONSIVE ====== */
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
